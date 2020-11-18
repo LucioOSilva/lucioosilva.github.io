@@ -1,2 +1,4 @@
 # Portifolio
-My portfolio and a liitle bit of my projects
+Welcome to my portfolio! 😊
+My name is Lucio, I am a software web developer student at [Trybe](https://www.betrybetrybe.com)
+
