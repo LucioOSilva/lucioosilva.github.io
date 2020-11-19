@@ -1,14 +1,26 @@
+body {
+    font-family: Barlow, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #FFD8B1;
+    color: #610023;
+}
+
 h1 {
-    font-family: sans-serif;
-    font-weight: 600;
-    color: orange;
+    font-weight: bolder;
     font-size: 65px;
 }
 
-ul {
-    background-color: papayawhip;
+p {
+    size: 3em;
 }
 
-.pbg {
-    background-color: plum;
+a {
+
+    color: #C27F79;
+    text-decoration: none;
+}
+
+.nvb {
+    display: inline;
+    padding-left: 10px;
 }
