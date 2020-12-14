@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(0deg, rgba(241,158,142,1) 0%, rgba(152,117,111,1) 35%, rgba(156,58,103,1) 87%);
+  color:rgb(26, 26, 26) ;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  height: 1080px;
+  margin: 0;
+}
+
+button {
+  margin: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+li {
+  background-color: #F19E8E;
+  border: 1px solid rgba(207, 142, 193, 0.733);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  margin: 5px;
+  transition: 0.9s;
+  word-wrap: break-word;
+}
+
+ol {
+  list-style-position: inside;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.fix-footer {
+  background-color: #F19E8E;
+  border-radius: 10px 10px 0 0;
+  bottom: 0;
+  margin: auto 0;
+  position: fixed;
+  width: 100%;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.header-block {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.in-bar {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.in-bar-input {
+  font-style: italic;
+  text-align: center;
+  width: 200px;
+}
+
+.principal {
+  margin: auto;
+  min-width: 365px;
+  width: 80%;
+}
+
+.tasks {
+  margin: auto;
+  width: 90%;
+}
+
+.tasks-block {
+  background-color: #58656D;
+  border: 5px solid thistle;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  margin: 15px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.title {
+  color: rgb(26, 26, 26);
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 0px #58656D, 
+              3px 2px 0px #98756F,
+              3px 3px 0px #F19E8E;
+}
