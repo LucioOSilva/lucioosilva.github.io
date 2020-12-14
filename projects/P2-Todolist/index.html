@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Quicksand&display=swap" rel="stylesheet">   
+    <title>PoneyTasks</title>
+</head>
+<body>
+    <div class="principal">
+        <header class="header-block">
+            <h1 class="title">🦄 Poney Tasks 🦄</h1>
+            <h3>Otimize sua rotina, gerencie suas tarefas</h3>
+        </header>
+        <div class="input-session center">
+            <form id="input-bar" class="in-bar">
+                <label for="data-inserted"></label>
+                <input id="texto-tarefa" class="in-bar-input" type="text" name="tarefa" placeholder="digite uma tarefa...">
+                <button id="criar-tarefa" type="submit">Adicionar tarefa</button>
+            </form>
+        </div>
+        <div class="tools center">
+        </div>
+        <div class="center">
+            <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+            <h3>Esta é sua lista de tafefas!</h3>
+        </div>
+        <div class="tasks center">
+            <div class="tasks-block">
+            <ol id='lista-tarefas'></ol>
+            </div>
+        </div>
+    </div>
+    <footer class="fix-footer center">
+        <p class="footer-text">Desenvolvido por Lucio Silva</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

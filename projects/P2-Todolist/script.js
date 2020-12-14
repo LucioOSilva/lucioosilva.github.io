@@ -15,32 +15,40 @@ function changeBGSelectedItems() {
 function markupTasks() {
   const list = document.querySelector('ol#lista-tarefas');
   list.addEventListener('dblclick', function (event) {
-    if (event.target.className === '') {
-      event.target.className = 'completed';
-    } else {
-      event.target.className = '';
-    }
+    event.target.classList.toggle('completed');
   });
 }
 
 // 5- add task to list #lista-tarefas
+
+function removeStandardTask(list) {
+  let itemList;
+  if (list.children.length === 0) {
+    return
+  }
+  if (list.children[0].innerText === '🎯 Você ainda não tem tarefas!') {
+    itemList = list.children[0];
+    list.removeChild(itemList);
+  }
+}
 
 function clickAddTask() {
   const form = document.getElementById('input-bar');
   const taskOlList = document.querySelector('#lista-tarefas');
   form.addEventListener('submit', function (event) {
     event.preventDefault();
+    removeStandardTask(taskOlList);
     const taskItem = document.createElement('li');
     const taskRead = event.target.tarefa.value;
     taskItem.innerText = taskRead;
     if (taskRead === '') {
-      return;
+      alert ('digete uma tarefa!');
+      return
     }
     taskOlList.appendChild(taskItem);
     event.target.tarefa.value = '';
   });
 }
-
 
 // 8- buttons
 
@@ -63,6 +71,7 @@ function buttonRemoveAll() {
       list.removeChild(listElements[index]);
     }
     localStorage.clear();
+    addToEmptyList();
   });
 }
 
@@ -76,13 +85,13 @@ function buttonRemoveCompletedTasks() {
     for (let index = 0; index < listElements.length; index += 1) {
       if (listElements[index].className === 'completed') {
         list.removeChild(listElements[index]);
-        localStorage.removeItem(index);
+        localStorage.removeItem(`pt${index}`);
       }
     }
   });
 }
 
-// 12- save items on local storage
+// 12- save items on local storage - continues on window.eventListener below
 function buttonSaveTaskList() {
   const button = document.querySelector('#salvar-tarefas');
   button.addEventListener('click', function () {
@@ -91,21 +100,12 @@ function buttonSaveTaskList() {
       const objItem = { content: listElements[index].innerText,
         classContent: listElements[index].className,
       };
-      localStorage.setItem(index, JSON.stringify(objItem));
+      localStorage.setItem(`pt${index}`, JSON.stringify(objItem));
     }
   });
 }
 
-window.addEventListener('load', function () {
-  const list = document.querySelector('ol#lista-tarefas');
-  for (let index = 0; index < localStorage.length; index += 1) {
-    const objItem = JSON.parse(localStorage.getItem(index));
-    const newElement = document.createElement('li');
-    newElement.innerText = objItem.content;
-    newElement.className = objItem.classContent;
-    list.appendChild(newElement);
-  }
-});
+
 
 // 13- apply function to move up/down buttons
 
@@ -153,10 +153,19 @@ function buttonRemoveSelected() {
     for (let index = 0; index < listElements.length; index += 1) {
       if (listElements[index].style.backgroundColor === 'rgb(128, 128, 128)') {
         list.removeChild(listElements[index]);
-        localStorage.removeItem(index);
+        localStorage.removeItem(`pt${index}`);
       }
     }
   });
+}
+
+// add standard item to empty list
+function addToEmptyList() {
+  const list = document.querySelector('ol#lista-tarefas');
+  const newElement = document.createElement('li');
+  newElement.innerText = "🎯 Você ainda não tem tarefas!"
+  newElement.style.listStyleType = 'none';
+  list.appendChild(newElement);
 }
 
 // add tasks to list and behavior of each taskitem in list
@@ -177,3 +186,18 @@ buttonSaveTaskList();
 buttonMoveUp();
 buttonMoveDown();
 buttonRemoveSelected();
+
+window.addEventListener('load', function () {
+  const list = document.querySelector('ol#lista-tarefas');
+  if (localStorage.length > 0) {
+    for (let index = 0; index < localStorage.length; index += 1) {
+      const objItem = JSON.parse(localStorage.getItem(`pt${index}`));
+      const newElement = document.createElement('li');
+      newElement.innerText = objItem.content;
+      newElement.className = objItem.classContent;
+      list.appendChild(newElement);
+    }
+  }  else {
+    addToEmptyList();
+  }
+});
