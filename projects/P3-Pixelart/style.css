@@ -1,0 +1,72 @@
+body {
+  font-family: Architects, cursive, sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+button {
+  margin: 10px;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+}
+
+ul li a {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+.box {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+}
+
+.color {
+  border: 1px solid black;
+  display: inline-block;
+}
+
+
+.fix-footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.formContent {
+  height: 50px;
+}
+
+.inputElement {
+  display: inline-block;
+  padding: 0 15px;
+  width: 30px;
+}
+
+.headerButton {
+  display: inline-block;
+  margin: 10px 10px 0;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.pixelBoardRow {
+  margin-bottom: -4px;
+}
+
+.principal {
+  text-align: center;
+  height: 1080px;
+}
