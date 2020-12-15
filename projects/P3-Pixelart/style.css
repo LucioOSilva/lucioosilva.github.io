@@ -1,6 +1,16 @@
 body {
   font-family: Architects, cursive, sans-serif;
   font-size: 18px;
+  margin: 0;
+}
+
+button {
+  margin: 10px;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
 }
 
 ul li a {
@@ -10,12 +20,8 @@ ul li a {
 
 .box {
   display: inline-block;
-  height: 40px;
-  width: 40px;
-}
-
-.buttonClear {
-  margin: 10px;
+  height: 35px;
+  width: 35px;
 }
 
 .color {
@@ -23,12 +29,21 @@ ul li a {
   display: inline-block;
 }
 
-.formContent {
-  height: 50px;
+
+.fix-footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
-.headerElements {
-  text-align: right;
+.footer-text {
+  margin: 0;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.formContent {
+  height: 50px;
 }
 
 .inputElement {
@@ -52,7 +67,6 @@ ul li a {
 }
 
 .principal {
-  height: 768px;
   text-align: center;
-  width: 1366px;
+  height: 1080px;
 }

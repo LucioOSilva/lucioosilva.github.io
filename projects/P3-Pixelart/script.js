@@ -14,14 +14,13 @@ function randomColor(numberOfColors) {
   return arrayColors;
 }
 
-arrayColors = randomColor(8);
+
 
 function addPaletteColor() {
   const elementHolder = document.querySelector('#color-palette');
   const colorListElements = document.querySelectorAll('.color');
   for (let index1 = 0; index1 < colorListElements.length; index1 += 1) {
     elementHolder.removeChild(colorListElements[index1]);
-    console.log('oi');
   }
   for (let index = 0; index < arrayColors.length; index += 1) {
     const newElement = document.createElement('div');
@@ -30,7 +29,7 @@ function addPaletteColor() {
     elementHolder.appendChild(newElement);
   }
 }
-addPaletteColor();
+
 
 function createPixelBoard(sizeBoard) {
   const elementHolder = document.querySelector('#pixel-board');
@@ -45,7 +44,7 @@ function createPixelBoard(sizeBoard) {
     elementHolder.appendChild(divRow);
   }
 }
-createPixelBoard(5);
+
 
 function changeColor() {
   const colorPaleteAll = document.querySelector('#color-palette').children;
@@ -59,7 +58,6 @@ function changeColor() {
     });
   }
 }
-changeColor();
 
 function paintPixel() {
   const colorPaleteAll = document.querySelector('#color-palette').children;
@@ -74,7 +72,7 @@ function paintPixel() {
     });
   }
 }
-paintPixel();
+
 
 function clearButton() {
   const elementHolder = document.querySelector('#color-palette');
@@ -88,14 +86,14 @@ function clearButton() {
       pixelsBoardAll[index].style.backgroundColor = 'white';
     }
   });
-  const elementHolder2 = document.querySelector('.principal');
+  const elementHolder2 = document.querySelector('.container');
   const buttonClearRemove = document.querySelector('button#clear-board');
   if (buttonClearRemove != null) {
     elementHolder2.removeChild(buttonClearRemove);
   }
   elementHolder.insertAdjacentElement('afterend', newelement);
 }
-clearButton();
+
 
 function CreateButtonSizePainel() {
   const elementHolder = document.querySelector('#clear-board');
@@ -121,8 +119,18 @@ function CreateButtonSizePainel() {
   formulary.appendChild(buttonSubmit);
   elementHolder.insertAdjacentElement('afterend', formulary);
 }
-CreateButtonSizePainel();
 
+function sortNewColors() {
+  const elementHolder = document.querySelector('#color-palette');
+  const buttonSortNewColors = document.createElement('button');
+  buttonSortNewColors.innerText = 'Novas Cores';
+  buttonSortNewColors.addEventListener('click', function (event) {
+    randomColor(8);
+    addPaletteColor();
+    changeColor();
+  });
+  elementHolder.insertAdjacentElement('afterend', buttonSortNewColors);
+}
 
 function clearPixelBoard() {
   const pixelsBoard = document.querySelector('#pixel-board');
@@ -138,19 +146,6 @@ function createNewBoard(valueInput) {
   paintPixel();
   clearButton();
 }
-
-function sortNewColors() {
-  const elementHolder = document.querySelector('#color-palette');
-  const buttonSortNewColors = document.createElement('button');
-  buttonSortNewColors.innerText = 'Novas Cores';
-  buttonSortNewColors.addEventListener('click', function (event) {
-    randomColor(8);
-    addPaletteColor();
-    changeColor();
-  });
-  elementHolder.insertAdjacentElement('afterend', buttonSortNewColors);
-}
-sortNewColors();
 
 function minMaxBoardCreator(valueInput) {
   let sizeBoard = 0;
@@ -182,8 +177,13 @@ function changePainelSize() {
     verifyPainelNumber(sizePainel);
   });
 }
-changePainelSize();
 
-window.addEventListener('load', function () {
-  arrayColors = randomColor(8);
-});
+arrayColors = randomColor(8);
+addPaletteColor();
+createPixelBoard(9);
+changeColor();
+paintPixel();
+clearButton();
+CreateButtonSizePainel();
+sortNewColors();
+changePainelSize();
