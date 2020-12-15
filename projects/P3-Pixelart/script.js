@@ -146,6 +146,7 @@ function sortNewColors() {
   buttonSortNewColors.addEventListener('click', function (event) {
     randomColor(8);
     addPaletteColor();
+    changeColor();
   });
   elementHolder.insertAdjacentElement('afterend', buttonSortNewColors);
 }
