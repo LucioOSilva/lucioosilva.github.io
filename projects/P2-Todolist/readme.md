@@ -10,7 +10,7 @@ Project to do list, developed as study material proposed by the [Trybe](https://
 
 ### Access
 
-link ➡ [Pixel Art](https://lucioosilva.github.io/portfolio/projects/P3-Pixelart/)
+link ➡ [ToDoList](https://lucioosilva.github.io/portfolio/projects/P3-Pixelart/)
 
 ### How to use
 
