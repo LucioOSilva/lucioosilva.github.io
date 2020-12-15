@@ -10,7 +10,7 @@ Project pixel art, developed as study material proposed by the [Trybe](https://w
 
 ### Access
 
-link ➡ [Pixel Art](http://lucioosilva.github.io/portfolio/P3-Pixelart)
+link ➡ [Pixel Art](https://lucioosilva.github.io/portfolio/projects/P3-Pixelart/)
 
 ### How to use
 
