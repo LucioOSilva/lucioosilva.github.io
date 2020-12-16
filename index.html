@@ -4,94 +4,96 @@
     <title>LucioOSilva portfolio</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="effects-style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet">
   <body>
     <div class="cont-main">
         <!--navegação-->
         <header>
-            <nav class="cont-nav">
-                <ul>
-                    <li class="nvb"><a href="">HOME</a></li>
-                    <li class="nvb"><a href="#myHistory">ABOUT</a></li>
-                    <li class="nvb"><a href="#mySkills">SKILLS</a></li>
-                    <li class="nvb"><a href="#myProjects">PROJECTS</a></li>
-                    <li class="nvb"><a href="#myExtras">EXTRAS</a></li>
+            <nav class="right">
+                <ul class="nv-list">
+                    <li class="icons"><a href="https://github.com/LucioOSilva" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+                    <li class="icons"><a href="https://www.instagram.com/lucio.bhz/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li class="icons"><a href="https://www.facebook.com/lucioosilva00" target="_blank"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                    <li class="icons"><a href="#my-projects" target="_blank"><i class="fa fa-folder-open fa-lg"></i></a></li>
                 </ul>
             </nav>
         </header>
         <!--corpo-->  
-        <div id="myHistory">
-            <div class="cont-intro">
-                <div class="box-title">
-                    <h1 class="title">Lucio Silva</h1>
-                    <p>Hello my name is <a href="#mp">Lúcio</a>
-                    <p>I am a software web developer student at <a href="https://www.betrybe.com" target="_blank">Trybe</a></p></p>
-                    <p>In a long path to the great knowledge</p>
-                </div>
-                <div class="box-pic">
-                    <img id="mp" src="./assets/ft-perfil2.png" alt="my photo">
-                </div>
+        <section id="my-history" class="cont-intro center">
+            <div class="box text-left">
+                <h1>Lucio Silva</h1>
+                <p>Hello my name is <a href="#mp">Lúcio</a>
+                <p>I am a software web developer student at <a href="https://www.betrybe.com" target="_blank">Trybe</a></p></p>
+                <p>In a long path to the great knowledge</p>
             </div>
-        </div>
+            <div class="box center">
+                <img id="mp" class="profile-picture center" src="./assets/ft-perfil2.png" alt="my photo">
+            </div>
+        </section>
             <!--My skills-->
-        <section>
-            <article id="myAbout">
-                <p class="subtitle">A little bit about me:</p>
+        <section class="justify">
+            <article id="extras" class="box center">
+                <h2>A little bit about me:</h2>
                 <p>I am Brazilian, born in 88, I live in Belo Horizonte - Minas Gerais, bad at football and passionate about electronic games, also very curious, I never stopped studying!</p>
-                <ul>
-                    <li><b>studious</b></li>
-                    <li>curious</li>
-                    <li><strike>un</strike>organized</li>
-                    <li>nature lover</li>
-                    <li>thinker</li>
-                </ul>
             </article>
-            <article id="mySkills">
-                <p class="subtitle">Some of my skills</p>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>Python3</li>
-                    <li>C#</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                </ul>
+            <article class="box center">
+                <div class="mini">
+                <h3>I think I am:</h3>
+                    <ul class="extraItems">
+                        <li><b>studious</b></li>
+                        <li>curious</li>
+                        <li><strike>un</strike>organized</li>
+                        <li>nature lover</li>
+                        <li>thinker</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="box center">
+                <div class="mini">
+                    <h3>Evolving skills:</h3>
+                    <ul class="extraItems">
+                        <li>JavaScript</li>
+                        <li>Python3</li>
+                        <li>C#</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
             </article>
         </section>
         <!--my projects-->
-        <div id="myProjects">
-            <h2>My projects</h2>
-            <div class="projects-card">
-                <a href="https://lucioosilva.github.io/portfolio/projects/P1-Stomatopoda/"><img class="projects-card-img" src="./assets/p1-preview.png" alt="imagem_preview_projeto"></a>
-                <div class="projects-card-container">
-                    <h4><b>Stomatopoda</b></h4>
-                    <p>Sobre o Stomatopoda, algumas boas curiosidades deste animal - desenvolvido somente em HTML e CSS</p>
-                </div>
+        <div id="my-projects" class="projects center">
+            <div>
+                <h2 class="projects-text">My projects</h2>
             </div>
-            <div class="projects-card">
-                <a href="https://lucioosilva.github.io/portfolio/projects/P2-Todolist/"><img class="projects-card-img" src="assets/p2-preview.png" alt="imagem_preview_projeto"></a>
-                <div class="projects-card-container">
-                    <h4><b>To do List</b></h4>
-                    <p>Projeto 'to do list'; cria lista de tarefas, marcando as concluidas e salvando a lista!</p>
-                </div>
+            <div class="project-item">
+                <h3 class="projects-text">Project 1: Stomatopoda</h3>
+                <p class="projects-text">
+                    Project developed only in HTML and CSS - About Stomatopoda, some good curiosities of this animal</p>
+                <p class="projects-text"><a href="https://lucioosilva.github.io/portfolio/projects/P1-Stomatopoda/" target="_blank"><em>Ver projeto 🚀</em></a></p>
             </div>
-            <div class="projects-card">
-                <a href="https://lucioosilva.github.io/portfolio/projects/P3-Pixelart/"><img class="projects-card-img" src="./assets/p3-preview.png" alt="imagem_preview_projeto"></a>
-                <div class="projects-card-container">
-                    <h4><b>Pixel Art</b></h4>
-                    <p>Projeto Pixel art; crie e liberte a imaginação; Manipulando DOM e trabalhando com eventos JS</p>
-                </div>
+            <div class="project-item">
+                <h3 class="projects-text">Project 2: To Do List</h3>
+                <p class="projects-text">Task list design, DOM manipulation and working with event captures in JavaScript</p>
+                <p class="projects-text"><a href="https://lucioosilva.github.io/portfolio/projects/P2-Todolist/" target="_blank"><em>Ver projeto 🚀</em></a></p>
             </div>
-            <!--some cards or a nice way to talk about my projects-->
+            <div class="project-item">
+                <h3 class="projects-text">Project 3: Pixel Art</h3>
+                <p class="projects-text">Pixel art design, pixel drawing, DOM manipulation and working with JavaScript event captures</p>
+                <p class="projects-text"><a href="https://lucioosilva.github.io/portfolio/projects/P3-Pixelart/" target="_blank"><em>Ver projeto 🚀</em></a></p>
+            </div>
+            <div class="project-item">
+                <h3 class="projects-text">Project 4: Under construction</h3>
+                <p class="projects-text">Project will be elaborated soon</p>
+                <p class="projects-text"><a href="https://lucioosilva.github.io/portfolio/" target="_blank"><em>Ver projeto 🚀</em></a></p>
+            </div>
         </div>
-        <!--extras-->
-        <div id="myExtras">
-            <!--a little bit of about hobbyes and other stuffs-->
-        </div>
-        <footer>
-            <p>Desenvolvido por LucioOSilva</p>
+        <div class="divisor"></div>
+        <footer class="fix-footer center">
+            <p class="text-footer"><em>Developed by LucioOSilva</em></p>
         </footer>
     </div>
   </body>
