@@ -1,4 +1,6 @@
 body {
+  background-color: #FFC513;
+  color: #730039;
   font-family: Barlow, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   margin: 0;
@@ -7,6 +9,13 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-shadow: 2px 2px 2px rgb(139, 138, 138);
+  transition: 0.5s;
+  color: black;
 }
 
 nav ul li {
@@ -19,22 +28,23 @@ nav ul li {
   margin: auto;
   padding: 50px 30px;
   vertical-align: middle;
-  width: 27%;
+  width: 28%;
 }    
 
 .center {
   text-align: center;
 }
 .cont-intro {
-  background-color: brown;
+  background-color: #FF724C;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .divisor {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    height: 5px;
-    margin: 20px auto;
-    width: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  height: 5px;
+  margin: 20px auto;
+  width: 10%;
 }
 
 .extraItems {
@@ -43,14 +53,19 @@ nav ul li {
 }
 
 .fix-footer {
+  background-color: #FF724C;
   bottom: 0;
 }
 
-.intro {
-  display: inline-block;
-  margin-left: 9%;
-  vertical-align: middle;
-  width: 40%;
+.icons {
+  margin: 10px ;
+  font-size: 23px;
+}
+
+.icons:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+  font-size: 22px;
 }
 
 .justify {
@@ -69,9 +84,27 @@ nav ul li {
   display: inline-block;
 }
 
+.nv-list {
+    margin: 0;
+    padding: 10px;
+}
+
 .projects {
-  background-color: blueviolet;
   margin: 10px 0;
+}
+
+.project-item {
+  background-color: #FF724C;
+  border: 2px solid #73003a3d;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+  width: 85%;
+}
+
+.project-item:hover {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
 }
 
 .projects-text {
@@ -80,8 +113,9 @@ nav ul li {
 }
 
 .profile-picture {
-  border: 10px solid white;
+  border: 10px solid #730039;
   border-radius: 50%;
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2);
   height: 300px;
 }
 
@@ -102,4 +136,8 @@ nav ul li {
 .text-footer {
   margin: 0;
   padding: 20px;
+}
+
+.text-left {
+  text-align: left;
 }
