@@ -1,6 +1,6 @@
 body {
-  background-color: #FFC513;
-  color: #730039;
+  background-color: #D8DCD6;
+  color: #000133;
   font-family: Barlow, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   margin: 0;
@@ -35,7 +35,7 @@ nav ul li {
   text-align: center;
 }
 .cont-intro {
-  background-color: #FF724C;
+  background-color: #475F94;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -53,8 +53,9 @@ nav ul li {
 }
 
 .fix-footer {
-  background-color: #FF724C;
+  background-color: #475F94;
   bottom: 0;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .icons {
@@ -69,15 +70,15 @@ nav ul li {
 }
 
 .justify {
-    text-align: justify;
-    width: 85%;
-    margin: auto;
+  text-align: justify;
+  width: 85%;
+  margin: auto;
 }
 
 .justify::after{
-    content: '';
-    display: inline-block;
-    width: 100%;
+  content: '';
+  display: inline-block;
+  width: 100%;
 }
 
 .mini {
@@ -85,8 +86,8 @@ nav ul li {
 }
 
 .nv-list {
-    margin: 0;
-    padding: 10px;
+  margin: 0;
+  padding: 10px;
 }
 
 .projects {
@@ -94,7 +95,7 @@ nav ul li {
 }
 
 .project-item {
-  background-color: #FF724C;
+  background-color: #e9c32b;
   border: 2px solid #73003a3d;
   border-radius: 10px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -108,25 +109,15 @@ nav ul li {
 }
 
 .projects-text {
-    margin: 0;
-    padding: 10px;
+  margin: 0;
+  padding: 10px;
 }
 
 .profile-picture {
-  border: 10px solid #730039;
+  border: 10px solid #d4b123;
   border-radius: 50%;
   box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2);
   height: 300px;
-}
-
-.shadow {
-  background-color: blueviolet;
-  border-radius: 50%;
-  display: block;
-  height: 300px;
-  margin: 100px;
-  padding:  0 50px 50px 0;
-  width: 300px;
 }
 
 .right {
@@ -134,8 +125,9 @@ nav ul li {
 }
 
 .text-footer {
-  margin: 0;
-  padding: 20px;
+  font-size: 18px;
+  margin: 10px 0 0;
+  padding: 10px;
 }
 
 .text-left {
