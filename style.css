@@ -5,7 +5,7 @@ body {
 }
 
 
-li a {
+a {
   text-decoration: none;
 }
 
@@ -29,11 +29,18 @@ nav ul li {
   background-color: brown;
 }
 
+.divisor {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    height: 5px;
+    margin: 20px auto;
+    width: 10%;
+}
+
 .extraItems {
   list-style-position: inside;
   text-align: justify;
 }
-
 
 .fix-footer {
   bottom: 0;
@@ -63,7 +70,13 @@ nav ul li {
 }
 
 .projects {
-  padding: 30px;
+  background-color: blueviolet;
+  margin: 10px 0;
+}
+
+.projects-text {
+    margin: 0;
+    padding: 10px;
 }
 
 .profile-picture {
@@ -90,36 +103,3 @@ nav ul li {
   margin: 0;
   padding: 20px;
 }
-
-
-.projects-card{
-  display: inline-block;
-  text-align: center;
-  height: 500px;
-  width: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-  margin: 10px 5px;
-  vertical-align: middle;
-}
-
-.projects-card-container{
-  margin: 0px 20px;
-  height: 170px;
-  background-color: rgb(240, 224, 224);
-}
-
-.projects-card p{
-  font-size: 0.8em;
-}
-
-.projects-card-img{
-  width: 270px;
-  height: 250px;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin: 10px 15px 0px;
-}
-
-
