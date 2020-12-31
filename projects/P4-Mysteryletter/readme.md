@@ -19,7 +19,7 @@ The words will be created in different text styles! 🤸
 
 <br>
 <div style="text-align:center;"/>
-<img src="../../assets/p3-pixelart.gif" width="70%">
+<img src="../../assets/p4-preview.png" width="70%">
 </div>
 <br>
 
