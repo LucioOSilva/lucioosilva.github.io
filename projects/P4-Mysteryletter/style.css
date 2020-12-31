@@ -1,0 +1,94 @@
+body {
+  background-color: whitesmoke;
+  border: 0;
+  font-family: Courier, monospace, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  display: inline-block;
+  margin: 25px;
+  width: 70%;
+}
+
+p {
+  display: block;
+}
+
+.big {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.counter {
+  display: none;
+}
+
+.fix-footer {
+  background-color: #475F94;
+  bottom: 0;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  height: 20px;
+}
+
+.letter-body {
+  height: 1080px;
+}
+
+.newspaper {
+  background-color: antiquewhite;
+  font-family: Times New Roman, sans-serif;
+  font-weight: 700;
+}
+
+.magazine1 {
+  background-color: teal;
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.magazine2 {
+  background-image: url('images/pink-pattern.png');
+  color: fuchsia;
+  font-family: Verdana, sans-serif;
+  font-weight: 900;
+}
+
+.medium {
+  font-size: 20px;
+  padding: 8px;
+}
+
+.minha-carta {
+  font-size: 70px;
+  margin: 40px;
+  padding: 40px;
+  word-wrap: break-word;
+}
+
+.reallybig {
+  font-size: 40px;
+  padding: 15px;
+}
+
+.rotateleft {
+  transform: rotate(-5deg);
+}
+
+.rotateright {
+  transform: rotate(5deg);
+}
+
+.skewleft {
+  transform: skewX(10deg);
+}
+
+.skewright {
+  transform: skewX(-10deg);
+}
