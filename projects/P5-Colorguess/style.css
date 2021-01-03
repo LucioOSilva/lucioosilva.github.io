@@ -1,0 +1,53 @@
+body {
+  background-color: #8F8CE7;
+  border: 0;
+  font-family: fantasy, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.ball {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  height: 70px;
+  margin: 10px;
+  width: 70px;
+}
+
+.ball:hover {  
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.colorguess-body {
+  background-color: #D8DCD6;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px 10px 0 0;
+  height: 1080px;
+  margin: 30px 10% 0 10%;
+  padding: 10px;
+}
+
+.fix-footer {
+  background-color: #D8DCD6;
+  bottom: 0;
+  margin: auto 10% 0;
+  height: 20px;
+  padding: 0;
+}
+
+.rgb-score-list {
+  display: inline-block;
+}
+
+.text-footer {
+  margin: 0;
+  padding: 0;
+}
