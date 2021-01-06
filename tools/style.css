@@ -1,0 +1,26 @@
+body {
+  font-size: 18px;
+}
+
+.justify {
+  text-align: justify;
+  width: 75%;
+  margin: auto;
+}
+
+.justify::after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+
+.space-horizontal {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.space-vertical {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
