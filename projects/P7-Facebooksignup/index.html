@@ -8,21 +8,23 @@
 </head>
 <body>
   <header class="top-bar">
-    <img src="imgs/facebook-logo.png" alt="Logo Faebook" class="facebook-logo">
+    <div class="top-bar-display">
+      <img src="imgs/facebook-logo.png" alt="Logo Faebook" class="facebook-logo">
       <form action="" class="facebook-login">
         <div class="form-group">
           <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-          <input type="text" id="user-email-phone" class="login-input">
+          <input type="text" id="user-email-phone" class="login-input-user">
         </div>
         <div class="form-group">
           <label for="user-password" id="user-password-label">Senha</label>
-          <input type="password" id="user-password" class="login-pass">
-          <p class="input-forgotpass">Esqueceu a conta?</p>
+          <input type="password" id="user-password" class="login-input-pass">
+          <p class="input-forgotpass"><a href="">Esqueceu a conta?</a></p>
         </div>
         <div class="form-control">
-          <button id="button-login" class="login-btn">Entrar</button>
+          <button id="button-login" class="btn-login">Entrar</button>
         </div>
       </form>
+    </div>
   </header>
   <main class="main-content">
     <div class="left-content">
@@ -30,26 +32,28 @@
       <img src="imgs/networking.png" alt="Imagem networking" id="facebook-networking" class="facebook-left-img-world">
     </div>
     <div class="right-content">
-      <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
+      <h1 class="right-content-title">Abra uma conta</h1>
+      <p class="right-content-subtitle">É rápido e fácil.</p>
       <form id="form-subscribe" action="" class="form-subscribe">
-        <input type="text" name="firstname" placeholder="Nome" class="form-subscribe-half-line" required>
-        <input type="text" name="lastname" placeholder="Sobrenome" class="form-subscribe-half-line" required>
-        <input type="text" name="phone_email" placeholder="Celular ou email" class="form-subscrib-full-line" required>
-        <input type="password" name="password" placeholder="Nova senha" class="form-subscrib-full-line" required>
-        <div class="form-group">
-          <label for="birthdate" id="label-birthdate" class="">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
-        </div>
-        <label for="" id="label-gender" class="container form-subscrib-full-line">Gênero</label>
-        <input type="radio" value="Feminino" name="gender" id="gender-female" required>
-        <label for="gender-female">Feminino</label>
-        <input type="radio" value="Masculino" name="gender" id="gender-male">
-        <label for="gender-male">Masculino</label>
-        <input type="radio" value="Personalizado" name="gender" id="gender-custom">
-        <label for="gender-custom">Personalizado</label>
-        <button class="button" type="submit" id="facebook-register">Cadastre-se</button>
-        <p id="message" class="form-subscrib-full-line"></p>
+        <input type="text" name="firstname" placeholder="Nome" class="right-content-half-inputs" required>
+        <input type="text" name="lastname" placeholder="Sobrenome" class="right-content-half-inputs" required>
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="right-content-full-inputs" required>
+        <input type="password" name="password" placeholder="Nova senha" class="right-content-full-inputs" required>
+        <label for="birthdate" id="label-birthdate" class="label-style">Data de nascimento</label>
+        <input type="date" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" class="right-content-half-inputs" required>        
+        <label for="" id="label-gender" class="label-style">Gênero</label>
+        <input class="right-content-radio"type="radio" value="Feminino" name="gender" id="gender-female" required>
+        <label class="right-content-radio-label"for="gender-female">Feminino</label>
+        <input class="right-content-radio"type="radio" value="Masculino" name="gender" id="gender-male">
+        <label class="right-content-radio-label"for="gender-male">Masculino</label>
+        <input class="right-content-radio"type="radio" value="Personalizado" name="gender" id="gender-custom">
+        <label class="right-content-radio-label" for="gender-custom">Personalizado</label>
+        <p class="form-rules">
+          Ao clicar em Cadastre-se, você concorda com nossos <a href="">Termos</a>, <a href="">Política de Dados</a> 
+          e <a href="">Política de Cookies</a>. Você pode receber notificacões por SMS e pode cancelar isso quando quiser.
+        </p>
+        <button class="btn-submitform" type="submit" id="facebook-register">Cadastre-se</button>
+        <p id="message"></p>
       </form>
     </div>
   </main>
