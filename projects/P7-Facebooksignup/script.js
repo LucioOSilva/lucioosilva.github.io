@@ -64,6 +64,7 @@ function validateForm() {
     event.preventDefault();
     if (!formSubscribe.checkValidity()) {
       paragraph.innerText = 'Campos inválidos';
+      paragraph.className = 'message';
     } else {
       paragraph.innerText = '';
       createAnswerLayout();
@@ -91,6 +92,36 @@ function customGender() {
   });
 }
 
+function createListLinks(item) {
+  const link = document.createElement('a');
+  const listItem = document.createElement('li');
+  link.innerText = item;
+  link.href = '';
+  listItem.className = 'footer-list';
+  listItem.appendChild(link);
+  return listItem;
+}
+
+function fillFooter(footerItems,idSection) {
+  const footerSection2 = document.querySelector(idSection);
+  for (let index = 0; index < footerItems.length; index += 1) {
+    const child = createListLinks(footerItems[index]);
+    footerSection2.appendChild(child);
+  }
+}
+
+const footerSection1Items = ['Português (Brasil)','English (US)','Español','Français (France)','Italiano','العربية',
+  'Deustch','हिन्दी','中文(简体)','日本語'];
+
+const footerSection2Items = ['Cadastre-se','Entrar','Messenger','Facebook Lite','Watch','Pessoas','Páginas','Categorias de Página',
+  'Locais','Jogos','Locais','Marketplace','Facebook Pay','Grupos','Vagas de emprego','Oculus','Portal','InstagramLocal',
+  'Campanhas de arrecadação de fundos','Serviços','Central de Informações de Votação','Sobre','Criar anúncio','Criar Página',
+  'Desenvolvedores','Carreiras','Privacidade','Cookies','Escolhas para anúncios','Termos','Ajuda','Configurações'];
+
+
 validateForm();
 alertEmailOrPhone();
 customGender();
+
+fillFooter(footerSection1Items, '#footer-section1');
+fillFooter(footerSection2Items, '#footer-section2');
