@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Projeto Facebook</title>
+</head>
+<body>
+  <div class="page-container">
+    <header class="top-bar">
+      <div class="top-bar-display">
+        <span class="span-alt-logo"></span>
+        <img src="imgs/facebook-logo.png" alt="Logo Faebook" class="facebook-logo">
+        <form action="" class="facebook-login">
+          <div class="form-group">
+            <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+            <input type="text" id="user-email-phone" class="login-input-user">
+          </div>
+          <div class="form-group">
+            <label for="user-password" id="user-password-label">Senha</label>
+            <input type="password" id="user-password" class="login-input-pass">
+            <p class="input-forgotpass"><a href="">Esqueceu a conta?</a></p>
+          </div>
+          <div class="form-control">
+            <button id="button-login" class="btn-login">Entrar</button>
+          </div>
+        </form>
+
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="left-content">
+        <p id="facebook-slogan" class="facebook-left-alt">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <img src="imgs/networking.png" alt="Imagem networking" id="facebook-networking" class="facebook-left-img-world">
+      </div>
+      <div class="right-content">
+        <h1 class="right-content-title">Abra uma conta</h1>
+        <p class="right-content-subtitle">É rápido e fácil.</p>
+        <form id="form-subscribe" action="" class="form-subscribe">
+          <input type="text" name="firstname" placeholder="Nome" class="right-content-half-inputs" required>
+          <input type="text" name="lastname" placeholder="Sobrenome" class="right-content-half-inputs" required>
+          <input type="text" name="phone_email" placeholder="Celular ou email" class="right-content-full-inputs" required>
+          <input type="password" name="password" placeholder="Nova senha" class="right-content-full-inputs" required>
+          <label for="birthdate" id="label-birthdate" class="label-style">Data de nascimento</label>
+          <input type="date" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" class="right-content-half-inputs" required>
+          <label for="" id="label-gender" class="label-style">Gênero</label>
+          <input class="right-content-radio"type="radio" value="Feminino" name="gender" id="gender-female" required>
+          <label class="right-content-radio-label"for="gender-female">Feminino</label>
+          <input class="right-content-radio"type="radio" value="Masculino" name="gender" id="gender-male">
+          <label class="right-content-radio-label"for="gender-male">Masculino</label>
+          <input class="right-content-radio"type="radio" value="Personalizado" name="gender" id="gender-custom">
+          <label class="right-content-radio-label" for="gender-custom">Personalizado</label>
+          <p class="form-rules">
+            Ao clicar em Cadastre-se, você concorda com nossos <a href="">Termos</a>, <a href="">Política de Dados</a> 
+            e <a href="">Política de Cookies</a>. Você pode receber notificacões por SMS e pode cancelar isso quando quiser.
+          </p>
+          <button class="btn-submitform" type="submit" id="facebook-register">Cadastre-se</button>
+          <p id="message"></p>
+          <p class="right-content-createanother"><a href="">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-display">
+        <ul id="footer-section1" class="footer-section"></ul>
+        <hr>
+        <ul id="footer-section2" class="footer-section"></ul>
+      </div>
+      <p id="message" class="copyright">Facebook © 2020</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
