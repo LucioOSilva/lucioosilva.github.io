@@ -77,9 +77,9 @@ li {
 }
 
 .facebook-logo {
-  order: 0;
   height: 10%;
   margin-left: -25px;
+  order: 0;
   width: 250px;
 }
 
@@ -87,7 +87,6 @@ li {
   bottom: 0;
   background-color: whitesmoke;
   position: absolute;
-  bottom: 0;
   width: 100%;
   height: 1rem; 
 }
@@ -163,16 +162,16 @@ li {
   justify-content: start;
 }
 
-.login-input-user {
+.login-input-pass {
   border: 1px solid rgb(33, 33, 33);
-  margin: 5px 0 21px;
+  margin-top: 5px;
   padding: 5px;
   width: 190px;
 }
 
-.login-input-pass {
+.login-input-user {
   border: 1px solid rgb(33, 33, 33);
-  margin-top: 5px;
+  margin: 5px 0 21px;
   padding: 5px;
   width: 190px;
 }
@@ -230,10 +229,11 @@ li {
   width: 49%;
 }
 
-.right-content-title {
-  color: rgb(66, 66, 66);
-  font-size: 2.5em;
-  margin: 20px 0;
+.right-content-radio {
+  color: rgb(33, 33, 33);
+  font-size: 1.3em;
+  align-self: center;
+  margin-left: 10px;
 }
 
 .right-content-subtitle {
@@ -243,18 +243,21 @@ li {
   justify-content: center;
 }
 
-.right-content-radio {
-  color: rgb(33, 33, 33);
-  font-size: 1.3em;
-  align-self: center;
-  margin-left: 10px;
-}
-
 .right-content-radio-label {
   color: rgb(33, 33, 33);
   font-size: 1.3em;
   align-self: center;
   margin-left: -10px;
+}
+
+.right-content-title {
+  color: rgb(66, 66, 66);
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+.span-alt-logo {
+  display: none;
 }
 
 .top-bar {
@@ -310,6 +313,10 @@ li {
     width: 700px;
   }
 
+  .footer {
+    height: 0px; 
+  }
+
   .left-content {
     align-items: center;
     justify-content: center;
@@ -326,6 +333,10 @@ li {
     width: 90%;
   }
 
+  .right-content-createanother {
+    margin: 20px auto 50px;
+  }
+
   .right-content-radio {
     margin-left: 10px;
   }
@@ -337,5 +348,49 @@ li {
 
   .right-content-title, .right-content-subtitle {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .facebook-logo {
+    display: none;
+  }
+
+  .facebook-login {
+    justify-content: flex-end;
+  }
+
+  .facebook-left-img-world {
+    width: 450px;
+  }
+
+  .facebook-slogan {
+    padding: 20px;
+  }
+
+  .login-input-user, .login-input-pass {
+    max-width: 150px;
+  }
+
+  .right-content {
+    margin: 10px;
+  }
+  
+  .right-content-radio {
+    margin-left: 0;
+  }
+
+  .right-content-radio-label {
+    margin-left: -20px;
+    width: 25%;
+  }
+
+  .span-alt-logo {
+    background: url(imgs/f-facebook.png);
+    background-size: cover;
+    display: flex;
+    margin: 10px;
+    height: 65px;
+    width: 65px;
   }
 }
