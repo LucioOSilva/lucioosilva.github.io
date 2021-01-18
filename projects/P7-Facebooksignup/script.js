@@ -110,6 +110,21 @@ function fillFooter(footerItems,idSection) {
   }
 }
 
+function mobile() {
+  const text = document.querySelector('.span-alt-logo');
+  const inputPhoneEmail = document.querySelector('#phoneEmail');
+  const inputPassword = document.querySelector('#newPassword');
+  const sizeScreen = window.matchMedia('(width: 450px)');
+  window.addEventListener('resize', function () {
+    if (sizeScreen.matches) {
+      text.innerText = 'Você deve se conectar primeiro.';
+      inputPhoneEmail.placeholder = 'Número de celular ou email';
+      inputPassword.placeholder = 'Senha';
+    }
+  });
+
+}
+
 const footerSection1Items = ['Português (Brasil)','English (US)','Español','Français (France)','Italiano','العربية',
   'Deustch','हिन्दी','中文(简体)','日本語'];
 
@@ -119,9 +134,12 @@ const footerSection2Items = ['Cadastre-se','Entrar','Messenger','Facebook Lite',
   'Desenvolvedores','Carreiras','Privacidade','Cookies','Escolhas para anúncios','Termos','Ajuda','Configurações'];
 
 
+
+window.onload = function () {
 validateForm();
 alertEmailOrPhone();
 customGender();
-
 fillFooter(footerSection1Items, '#footer-section1');
 fillFooter(footerSection2Items, '#footer-section2');
+mobile();
+}

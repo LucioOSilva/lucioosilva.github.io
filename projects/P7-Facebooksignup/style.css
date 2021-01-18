@@ -353,7 +353,8 @@ li {
 
 @media only screen and (max-width: 600px) {
   .facebook-logo {
-    display: none;
+    align-self: center;
+    flex-basis: 250px;
   }
 
   .facebook-login {
@@ -385,12 +386,61 @@ li {
     width: 25%;
   }
 
+}
+
+@media only screen and (max-width: 450px) {
+  .facebook-logo {
+    margin: auto;
+  }
+
+  .form-group, .form-control {
+    display: none;
+  }
+
+  .form-rules {
+    display: none;
+  }
+
+  .inputbirthdate, .inputgender, .inputlastname, .inputname {
+    display: none;
+  }
+
+  .inputpassword {
+    border-radius: 0 0 8px 8px;
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+
+  .inputphone {
+    border-radius: 8px 8px 0 0;
+    font-size: 1.1em;
+    margin-bottom: 0;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .login-input-user, .login-input-pass {
+    max-width: 150px;
+  }
+
   .span-alt-logo {
-    background: url(imgs/f-facebook.png);
-    background-size: cover;
+    background-color:rgb(240, 248, 212);
+    border-bottom: 1px solid rgb(175, 185, 33);
+    color: rgb(121, 128, 35);
     display: flex;
-    margin: 10px;
-    height: 65px;
-    width: 65px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;    
+  }
+
+  .right-content-createanother {
+    display: none;
+  }
+
+  .right-content-title, .right-content-subtitle {
+    display: none;
   }
 }
