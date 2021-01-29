@@ -1,0 +1,111 @@
+body {
+  background: url('assets/bg.png');
+  background-size: cover;
+  font-family: 'Comfortaa', cursive, sans-serif;
+  font-size: 18px;
+  height: 100%;
+  zoom: 0.8;
+}
+
+button {
+  height: 28px;
+  margin: 10px;
+  padding-top: 2px ;
+}
+
+footer {
+  bottom:0;
+  display: flex;
+  justify-content: space-around;
+  position:fixed;
+  width:100%;
+}
+
+footer p {
+  padding: 0 30px;
+  text-align: right;
+}
+
+form {
+  margin: 30px;
+}
+
+hr {
+  width: 10%;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+h2, h3, p {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+img {
+  border: 1px solid #a5a4a4;
+  border-radius: 10px 10px 0 0;
+  margin: auto;
+  width: 100%;
+}
+
+input {
+  font-size: 1em;
+}
+
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.badge {
+  border-radius: 1px;
+  border: none;
+  margin: auto;
+  width: 100px;
+}
+
+.main-content {
+  text-align: center;
+}
+.user-card {
+  background: url('assets/bg2.png');
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  width: 500px;
+}
+
+.user-card h1, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 550px) {
+  .user-card {
+    width: 400px;
+  }
+
+  p {
+    line-height: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  footer p {
+    text-align: center;
+  }
+  
+  .badge {
+    display: none;
+  }
+  
+  .user-card {
+    width: 100%;
+  }
+}
